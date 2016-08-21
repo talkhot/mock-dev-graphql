@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [ "node_modules" ]
+      }
+    }
+  },
+  "rules": {
+    "arrow-body-style": 0,
+    "dot-notation": 0,
+    "comma-dangle": 0,
+    "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
+    "func-names": 0,
+    "id-length": 0,
+    "no-console": 0,
+    "no-use-before-define": 0,
+    "no-multiple-empty-lines": [1, { "max": 1 }],
+    "no-unused-vars": 1,
+    "max-len": 0
+  },
+  "env": {
+    "mocha": true
+  }
+}

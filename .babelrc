@@ -1,0 +1,11 @@
+{
+  "presets": ["save"],
+  "plugins": [],
+  "env": {
+    "browser": {
+      "plugins": [
+        "typecheck"
+      ]
+    }
+  }
+}
