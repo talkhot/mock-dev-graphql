@@ -10,7 +10,7 @@ import Schema from '../data/schema';
 import Resolvers from '../data/resolvers';
 import Mocks from '../data/mocks';
 
-const isDeveloping = true;
+const env = process.env.NODE_ENV || 'development';
 const GRAPHQL_PORT = process.env.PORT || 8080;
 
 const executableSchema = makeExecutableSchema({
@@ -19,7 +19,7 @@ const executableSchema = makeExecutableSchema({
   allowUndefinedInResolve: true
 });
 
-if (isDeveloping) {
+if (env === 'development') {
   addMockFunctionsToSchema({
     schema: executableSchema,
     mocks: Mocks,
@@ -45,5 +45,5 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen(GRAPHQL_PORT, () => console.log(
-  `GraphQL Server is now running on http://localhost:${GRAPHQL_PORT}/graphql`
+  `GraphQL API Server is now running on http://localhost:${GRAPHQL_PORT}/graphql`
 ));
