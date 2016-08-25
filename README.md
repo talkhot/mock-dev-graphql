@@ -1,4 +1,4 @@
-# Backend: GraphQL development stack with easy mocking
+# WIP: GraphQL (development) API server
 
 * Libraries
     * [koa v2](https://github.com/koajs/koa)
@@ -16,8 +16,8 @@
   * dev with grunt and eslint
     * `$ grunt`
 
-  * dev with nodemon (no eslint)
-    * `$ npm run dev`
+  * production with nodemon
+    * `$ npm run production`
 
   * [http://localhost:8080/graphql](http://localhost:8080/graphql)
     * GraphQL end-point or to test with GraphiQL.
